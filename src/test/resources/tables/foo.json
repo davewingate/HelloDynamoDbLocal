@@ -1,0 +1,27 @@
+{
+  "TableName": "Foo",
+  "KeySchema": [
+    {
+      "AttributeName": "Bar",
+      "KeyType": "HASH"
+    },
+    {
+      "AttributeName": "Baz",
+      "KeyType": "RANGE"
+    }
+  ],
+  "AttributeDefinitions": [
+    {
+      "AttributeName": "Bar",
+      "AttributeType": "S"
+    },
+    {
+      "AttributeName": "Baz",
+      "AttributeType": "S"
+    }
+  ],
+  "ProvisionedThroughput": {
+    "ReadCapacityUnits": "10",
+    "WriteCapacityUnits": "10"
+  }
+}
